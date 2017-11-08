@@ -1,0 +1,10 @@
+version: "2"
+services:
+  geminabox:
+    build: .
+    environment:
+      - RUBYGEMS_PROXY=true
+    volumes:
+      - "./data:/opt/geminabox/data"
+    ports:
+      - 9292:9292
